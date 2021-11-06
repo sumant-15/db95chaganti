@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+  - results = [{brand: 'Levis', material: 'Cotton', cost: '35$'}, {brand: 'Audi', material: 'wool', cost: '45$'},{brand: 'BMW', material: 'Nylon', cost: '55$'} ]
+  div(class="container-fluid")
+      each item,index in results
+        div(class="row")
+          div(class="col-sm-2", style="cursor:pointer", onclick=`buy(${index})`)  #{item.brand}
+          div(class="col-sm-2", style="cursor:pointer",onclick=`buy(${index})`)  #{item.material}
+          div(class="col-sm-2", style="cursor:pointer",onclick=`buy(${index})`)  #{item.cost}
+  script. 
+    function buy(index) {
+      alert(`Purchased item ${index + 1}` )
+    }
