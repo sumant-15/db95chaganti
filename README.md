@@ -1,12 +1,8 @@
 # fwb95chaganti
-# created fwb95chaganti repository
-https://fwb95chaganti.herokuapp.com
+# created db95chaganti repository
+https://obscure-peak-80626.herokuapp.com/
 
-Alphabets - I, J, K, L
 
-Class Selected:
-
-Jacket - brand (String), material (String), cost (number)
 
 
 
